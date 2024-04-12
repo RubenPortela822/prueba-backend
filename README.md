@@ -25,5 +25,30 @@ npm run dev
 * ExpressJs
 * MySql
 
+# Usuarios
+## Estudiantes
+    usuario: usuario1
+    password: 1234567
+
+    usuario: usuario2
+    password: 1234567
+
+    usuario: usuario3
+    password: 1234567
+
+    usuario: usuario4
+    password: 1234567
+
+    usuario: usuario5
+    password: 1234567
+
+    usuario: usuario6
+    password: 1234567
+
+## Moderador
+    usuario: usuario7
+    password: 1234567
+
+
 
 
