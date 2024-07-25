@@ -1,7 +1,7 @@
 const express = require('express');
-const responses = require('../../common/responses');
-const userController = require('./controller');
-const checkAuth = require('../../middleware/auth');
+const responses = require('../common/responses');
+const userController = require('../controllers/users.controller');
+const checkAuth = require('../middleware/auth');
 const router = express.Router();
 
 router.get('/', checkAuth, async (req, res, next) => {
@@ -22,13 +22,5 @@ router.post('/', checkAuth, async (req, res, next) => {
    }
 });
 
-router.get('/seed', async (req, res, next) => {
-   try {
-      await userController.seed();
-      responses.success(req, res, "SEED OK", 200);
-   } catch (error) {
-      next(error);
-   }
-});
 
 module.exports = router;

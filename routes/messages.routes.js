@@ -1,6 +1,6 @@
 const express = require('express');
-const responses = require('../../common/responses');
-const messagesController = require('./controller');
+const responses = require('../common/responses');
+const messagesController = require('../controllers/messages.controller');
 
 const router = express.Router();
 
